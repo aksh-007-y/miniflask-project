@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purple Themed Navbar & Footer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css">
+ 
+</head>
+<body>
+  <header>
+    <nav class="navbar sticky-top" role="banner">
+      <div class="container d-flex flex-column align-items-center">
+        
+        <a href="#" class="navbar-brand " tabindex="0" aria-label="PurpleCalendar Home">
+          MiniFlaskLab
+        </a>
+        <div class="nav-row mt-2 w-100" role="navigation" aria-label="Primary site navigation">
+          <ul class="nav-left">
+            <li><a href="/" class="nav-link active" tabindex="0"> <span class="material-icons md-20" aria-hidden="true">home</span>Home</a></li>
+            <li><a href="/login" class="nav-link active" tabindex="0"><span class="material-icons md-20" aria-hidden="true">login</span> Login</a></li>
+            <li><a href="#" class="nav-link disabled" tabindex="0"><span class="material-icons md-20" aria-hidden="true">person_add</span> Sign Up</a></li>
+          </ul>
+          <ul class="nav-right">
+            <li><a href="/about" class="nav-link active" tabindex="0"><span class="material-icons md-20" aria-hidden="true">info</span> About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+   {% block content %}  {% endblock %}
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h5>About Mini-Project</h5>
+          <p>I've Designed A Simple And Clean Project In Which It Has Login And Sign-Up Page And All The Things Are Done With The Help Of Basics Of Flask-Html-Bootstrap5</p>
+        </div>
+        <div class="footer-col" aria-label="Quick Links">
+          <h5>Quick Links</h5>
+          <a href="#" class="footer-link" tabindex="0"><span class="material-icons md-18" aria-hidden="true">home</span> Home</a><br />
+          <a href="#" class="footer-link" tabindex="0"><span class="material-icons md-18" aria-hidden="true">event</span> Events</a><br />
+          <a href="#" class="footer-link" tabindex="0"><span class="material-icons md-18" aria-hidden="true">contact_page</span> Contact Us</a><br />
+          <a href="#" class="footer-link disabled" tabindex="0"><span class="material-icons md-18" aria-hidden="true">settings</span> Settings</a>
+        </div>
+        <div class="footer-col" aria-label="Contact Information">
+          <h5>Contact</h5>
+          <p>Email: agujgond@gmail.com</p>
+          <p>Phone: +91 7798464068</p>
+          <p>Address: WIT INSTITUTE , SOLAPUR</p>
+        </div>
+        <div class="footer-col" aria-label="Follow us on Social Media">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" tabindex="0">
+              <span class="material-icons" aria-hidden="true">facebook</span>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" tabindex="0">
+              <span class="material-icons" aria-hidden="true">twitter</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" tabindex="0">
+              <span class="material-icons" aria-hidden="true">linkedin</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" tabindex="0">
+              <span class="material-icons" aria-hidden="true">photo_camera</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: rgba(220, 214, 247, 0.3);" />
+      <p class="text-center small mt-3" aria-label="Copyright Notice">&copy; 2025 MiniFlaskLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
